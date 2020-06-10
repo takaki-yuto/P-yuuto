@@ -1,0 +1,452 @@
+/* トップページ */
+#welcome-content {
+  width: 100%;
+  height: 100vh;
+  background-image: image-url("welcome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  .welcome-box {
+    text-align: center;
+    padding: 40vh 30vh;
+    @media screen and ( max-width : 1100px ) {
+      padding: 40vh 0;
+    }
+    .welcome-title {
+      color: white;
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      @media screen and ( max-width : 1200px ) {
+        font-size: 28px;
+      }
+    }
+    .about-link-btn {
+      margin: 0 auto;
+      width: 100px;
+      padding: 0.8em 1.2em;
+      text-decoration: none;
+      color: white;
+      border: solid 2px #67c5ff;
+      background-color: #67c5ff;
+      border-radius: 3px;
+      transition: .4s;
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  }
+}
+
+/* 自己紹介 */
+#about-content {
+  .about-box {
+    text-align: center;
+    padding: 10vh 30vh;
+    @media screen and ( max-width : 1700px ) {
+      padding: 10vh 0;
+    }
+    .about-title-box {
+      font-weight: bold;
+      .about-title-sub {
+        color: orange;
+      }
+      .about-title-main {
+        font-size: 40px;
+      }
+    }
+    .my-details {
+      margin: 100px auto;
+      display: flex;
+      justify-content: center;
+      @media screen and ( max-width : 710px ) {
+        display: block;
+        margin: 40px 100px;
+      }
+      .my-picture {
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        background-image: image-url("test.jpg");
+        background-position: center center;
+      }
+      .my-info {
+        font-size: 20px;
+        text-align: left;
+        width: 320px;
+        margin: 0 0 0 50px;
+        @media screen and ( max-width : 710px ) {
+          display: block;
+          margin: 20px 0 0 0;
+        }
+      }
+    }
+    .exp-link-btn {
+      margin: 0 auto;
+      width: 100px;
+      padding: 0.8em 1.2em;
+      text-decoration: none;
+      color: white;
+      border: solid 2px #67c5ff;
+      background-color: #67c5ff;
+      border-radius: 3px;
+      transition: .4s;
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  }
+}
+
+/* 経験紹介 */
+#exp-content {
+  background-color: #1d809f;
+  color: white;
+  .exp-box {
+    padding: 5vh 0;
+    .exp-title-box {
+      text-align: center;
+      font-weight: bold;
+      .exp-title-sub {
+        color: orange;
+      }
+      .exp-title-main {
+        font-size: 40px;
+      }
+    }
+    .timeline {
+      list-style: none;
+      width: 60%;
+      margin: 40px auto;
+    }
+    .timeline > li {
+      margin-bottom: 20px;
+    }
+    @media ( min-width : 0px ){
+      .timeline > li {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+      }
+      .timeline-date {
+        width: 110px;
+        float: left;
+        margin-top: 20px;
+      }
+      .timeline-content {
+        width: 80%;
+        float: left;
+        border-left: 3px #e5e5d1 solid;
+        padding-left: 30px;
+      }
+      .timeline-content:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: orange;
+        position: absolute;
+        left: 106px;
+        top: 24px;
+        border-radius: 100%;
+        @media screen and ( max-width : 1190px ) {
+          background: #1d809f;
+        }
+      }
+    }
+    h3 {
+      padding-top: 14px;
+      font-weight: bold;
+      font-size: 23px;
+    }
+    .portfolio-link-box {
+      text-align: center;
+      margin: 80px auto;
+      .portfolio-link-btn {
+        width: 100px;
+        padding: 0.8em 1.5em;
+        text-decoration: none;
+        color: white;
+        border: solid 2px #67c5ff;
+        background-color: #67c5ff;
+        border-radius: 3px;
+        transition: .4s;
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+    }
+  }
+}
+
+
+/* 実績紹介 */
+#portfolio-content {
+  .portfolio-box {
+    padding: 10vh;
+    @media screen and ( max-width : 1250px ) {
+      padding: 10vh 0 0 0;
+    }
+    .portfolio-title-box {
+      text-align: center;
+      font-weight: bold;
+      .portfolio-title-sub {
+        color: orange;
+      }
+      .portfolio-title-main {
+        font-size: 40px;
+      }
+    }
+    .portfolio-title-sub-me {
+      margin-top: 50px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+
+    /* アプリ名「tsk-mgmt」 */
+    .work-box-a {
+      margin-top: 40px;
+      display: flex;
+      @media screen and ( max-width : 1250px ) {
+        display: block;
+      }
+      .work-picture {
+        @media screen and ( max-width : 1250px ) {
+          text-align: center;
+        }
+        #main-image-a {
+          border: 1px solid #ccc;
+          object-fit: cover;
+          height:450px;
+          width: 600px;
+          @media screen and ( max-width : 1250px ) {
+            width: 95%;
+          }
+        }
+        .work-picture-sub {
+          display:flex;
+          @media screen and ( max-width : 1250px ) {
+            justify-content: center;
+          }
+          .sub-image-a{
+            border: 1px solid #ccc;
+            object-fit:cover;
+            height:50px;
+            width: 80px;
+            opacity: 0.5;
+          }
+          .active-a {
+            opacity: 1;
+          }
+        }
+      }
+      .work-details {
+        margin-left: 20px;
+        @media screen and ( max-width : 1250px ) {
+          margin: 10px 0 0 0;
+        }
+        .tabnav-a{
+          margin: 0;
+          padding: 0;
+        }
+        .tabnav-a li{
+            display: inline;
+        }
+        .tabnav-a li a{
+            display: inline-block;
+            background: #405dca;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            text-decoration: none;
+        }
+        .tabnav-a li a:hover,
+        .tabnav-a li a.active{
+            background: #ddd;
+            color: #333;
+        }
+        .tabcontent-a{
+          padding: 20px;
+          border: 1px dotted #ccc;
+          width: 100%;
+          @media screen and ( max-width : 1250px ) {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    /* アプリ名「ポートフォリオ」 */
+    .work-box-b {
+      margin: 120px 0;
+      display: flex;
+      @media screen and ( max-width : 1250px ) {
+        display: block;
+      }
+      .work-picture {
+        @media screen and ( max-width : 1250px ) {
+          text-align: center;
+        }
+        #main-image-b {
+          border: 1px solid #ccc;
+          object-fit:cover;
+          height:450px;
+          width: 600px;
+          @media screen and ( max-width : 1250px ) {
+            width: 95%;
+          }
+        }
+        .work-picture-sub {
+          display:flex;
+          @media screen and ( max-width : 1250px ) {
+            justify-content: center;
+          }
+          .sub-image-b{
+            border: 1px solid #ccc;
+            object-fit:cover;
+            height:50px;
+            width: 80px;
+            opacity: 0.5;
+          }
+          .active-b {
+            opacity: 1;
+          }
+        }
+      }
+      .work-details {
+        margin-left: 20px;
+        @media screen and ( max-width : 1250px ) {
+          margin: 10px 0 0 0;
+        }
+        .tabnav-b{
+          margin: 0;
+          padding: 0;
+        }
+        .tabnav-b li{
+            display: inline;
+        }
+        .tabnav-b li a{
+            display: inline-block;
+            background: #405dca;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            text-decoration: none;
+        }
+        .tabnav-b li a:hover,
+        .tabnav-b li a.active{
+            background: #ddd;
+            color: #333;
+        }
+        .tabcontent-b{
+          padding: 20px;
+          border: 1px dotted #ccc;
+          width: 100%;
+          @media screen and ( max-width : 1250px ) {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+
+    /* アプリ名「FURIMA」 */
+    .work-box-c {
+      margin-top: 120px;
+      display: flex;
+      @media screen and ( max-width : 1250px ) {
+        display: block;
+      }
+      .work-picture {
+        @media screen and ( max-width : 1250px ) {
+          text-align: center;
+        }
+        #main-image-c {
+          border: 1px solid #ccc;
+          object-fit:cover;
+          height:450px;
+          width: 600px;
+          @media screen and ( max-width : 1250px ) {
+            width: 95%;
+          }
+        }
+        .work-picture-sub {
+          display:flex;
+          @media screen and ( max-width : 1250px ) {
+            justify-content: center;
+          }
+          .sub-image-c {
+            border: 1px solid #ccc;
+            object-fit:cover;
+            height:50px;
+            width: 80px;
+            opacity: 0.5;
+          }
+          .active-c {
+            opacity: 1;
+          }
+        }
+      }
+      .work-details {
+        margin-left: 20px;
+        @media screen and ( max-width : 1250px ) {
+          margin: 10px 0 0 0;
+        }
+        .tabnav-c{
+          margin: 0;
+          padding: 0;
+        }
+        .tabnav-c li{
+            display: inline;
+        }
+        .tabnav-c li a{
+            display: inline-block;
+            background: #405dca;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            text-decoration: none;
+        }
+        .tabnav-c li a:hover,
+        .tabnav-c li a.active{
+            background: #ddd;
+            color: #333;
+        }
+        .tabcontent-c {
+          padding: 20px;
+          border: 1px dotted #ccc;
+          width: 100%;
+          @media screen and ( max-width : 1250px ) {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* お問い合わせ */
+#contact-content {
+  background-color: #f8f9fa;
+  .contact-box {
+    text-align: center;
+    padding: 5vh;
+    .contact-title-box {
+      font-weight: bold;
+      .contact-title-sub {
+        color: orange;
+      }
+      .contact-title-main {
+        font-size: 40px;
+      }
+    }
+    .mail {
+      margin-top:20px;
+    }
+    .license {
+      margin-top: 100px;
+      color: #6c757d;
+    }
+  }
+}

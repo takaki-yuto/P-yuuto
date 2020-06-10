@@ -1,0 +1,276 @@
+//トップページへのリンクボタン
+#page-top.page-top
+  %p
+    %a#move-page-top.move-page-top ▲
+
+//ハンバーガーメニュー
+#wrapper
+  %p.btn-gnavi
+    %span
+    %span
+    %span
+  %nav#global-navi
+    %ul.menu
+      %li
+        %a{:href => "#welcome-content", class: "open"} トップ
+      %li
+        %a{:href => "#about-content", class: "open"} 自己紹介
+      %li
+        %a{:href => "#exp-content", class: "open"} 経験
+      %li
+        %a{:href => "#portfolio-content", class: "open"} 制作実績
+      %li
+        %a{:href => "#contact-content", class: "open"} お問い合わせ
+
+//トップページ
+#welcome-content
+  .welcome-box
+    .welcome-title
+      welcome to yuuto portfolio site
+    = link_to 'a bout me', '#about-content', class: "about-link-btn"
+
+//自己紹介
+#about-content
+  .about-box
+    .about-title-box
+      .about-title-sub
+        ABOUT
+      .about-title-main
+        自己紹介
+    .my-details
+      .my-picture
+      .my-info
+        %ul
+          %li
+            名前：Takaki Yuuto
+          %li
+            出身：熊本県
+          %li
+            最終経歴：SE(組み込み、RPA)
+          %li
+            やってみたいこと
+            %br
+            自分のブログを立ち上げて、趣味の音楽についての情報発信や、日々学んだことについてアウトプットできる環境を作ってみたい
+    = link_to '経験紹介', '#exp-content', class: "exp-link-btn"
+
+//経験紹介
+#exp-content
+  .exp-box
+    .exp-title-box
+      .exp-title-sub
+        EXPERIENCE
+      .exp-title-main
+        経験
+    %ul.timeline
+      %li
+        %p.timeline-date 2018年4月
+        .timeline-content
+          %h3 SEとして株式会社富士ソフトへ入社
+          %p 新入社員として、社会人の基礎を学ぶ。
+      %li
+        %p.timeline-date 2018年7月
+        .timeline-content
+          %h3 お客様先(東京エレクトロン九州)へ常駐し、本格的な業務の開始
+          %p 半導体製造装置の新規機能の開発から保守までを担当する。
+      %li
+        %p.timeline-date 2019年6月
+        .timeline-content
+          %h3 RPA(Uipath)を勉強し、勤怠システムの自動化ツールを開発着手
+          %p 勤怠システムの入力に時間がかかっていることに目を向け、その作業を自動化することに取り組む
+      %li
+        %p.timeline-date 2019年8月
+        .timeline-content
+          %h3 勤怠システムの自動化ツールが完成
+          %p 月に30分程度かかっていた作業を10分程度に短縮できた。この頃からRPAを通じてWeb系に興味を持つようになる。
+      %li
+        %p.timeline-date 2020年1月
+        .timeline-content
+          %h3 富士ソフトを退職し、プログラミングスクール「tech-camp」へ入学
+          %p Web系で働きたいという思いから退職し、プログラミングスクールに通い始める
+    .portfolio-link-box
+      = link_to '制作実績', '#portfolio-content', class: "portfolio-link-btn"
+
+//実績紹介
+#portfolio-content
+  .portfolio-box
+    .portfolio-title-box
+      .portfolio-title-sub
+        PORTFOLIO
+      .portfolio-title-main
+        制作実績
+    .portfolio-title-sub-me
+      個人制作
+    .work-box-a
+      .work-picture
+        = image_tag "tsk-mgmt/login-next.jpg", id: "main-image-a"
+        .work-picture-sub
+          = image_tag "tsk-mgmt/login-next.jpg",class: "sub-image-a active-a",id: 11
+          = image_tag "tsk-mgmt/top-page.jpg",class: "sub-image-a",id: 21
+          = image_tag "tsk-mgmt/plan-add.jpg",class: "sub-image-a",id: 31
+          = image_tag "tsk-mgmt/report-add.jpg",class: "sub-image-a",id: 41
+          = image_tag "tsk-mgmt/report-show.jpg",class: "sub-image-a",id: 51
+      .work-details
+        %ul.tabnav-a
+          %li
+            %a{:href => "#tab01"} 概要
+          %li
+            %a{:href => "#tab02"} 使用言語
+        .tabcontent-a
+          #tab01
+            %bアプリ名
+            %br
+            tsk-mgmt
+            %br
+            %br
+            %b URL
+            %br
+            = link_to 'http://18.178.191.12/', 'http://18.178.191.12/'
+            %br
+            %br
+            %b制作期間
+            %br
+            10日(1日あたり約5H)
+            %br
+            %br
+            %b github
+            %br
+            = link_to 'https://github.com/takaki-yuto/tsk-mgmt', 'https://github.com/takaki-yuto/tsk-mgmt'
+            %br
+            使用方法についてはread.meに記載しています。
+            %br
+            %br
+            %b作成経緯
+            %br
+            日報を確認してもらえないことがあり、情報伝達がうまくできなかった経験がありました。
+            %br
+            このミスを無くすために、日頃から確認する、予定表と日報の機能を組み合わせることで解決できると思い、 このサイトを作成いたしました。
+          #tab02
+            %bフレームワーク
+            %br
+            Ruby on Rails(Ver5.2.4.1)
+            %br
+            %br
+            %b使用言語
+            %br
+            HAML(ver5.1.2)
+            %br
+            SCSS(ver3.7.4)
+            %br
+            jquery(ver1.12.4)
+            %br
+            Ruby(ver2.5.1)
+    .work-box-b
+      .work-picture
+        = image_tag "Ptkyt/top-page.jpg", id: "main-image-b"
+        .work-picture-sub
+          = image_tag "Ptkyt/top-page.jpg",class: "sub-image-b active-b",id: 12
+          = image_tag "Ptkyt/exp.jpg",class: "sub-image-b",id: 22
+          = image_tag "Ptkyt/portfolio.jpg",class: "sub-image-b",id: 32
+      .work-details
+        %ul.tabnav-b
+          %li
+            %a{:href => "#tab01"} 概要
+          %li
+            %a{:href => "#tab02"} 使用言語
+        .tabcontent-b
+          #tab01
+            %bポートフォリオサイト
+            %br
+            %br
+            %b制作期間
+            %br
+            3日(1日あたり約5H)
+            %br
+            %br
+            %b作成経緯
+            %br
+            ポートフォリオサイトを作成した方が、自分を知ってもらいやすいと考え、作成いたしました。
+            %br
+            レスポンシブデザインも意識して作成いたしましたので、ウィンドウズサイズを変えてもビューが崩れません。
+          #tab02
+            %bフレームワーク
+            %br
+            Ruby on Rails(Ver5.2.4.1)
+            %br
+            %br
+            %b使用言語
+            %br
+            HAML(ver5.1.2)
+            %br
+            SCSS(ver3.7.4)
+            %br
+            jquery(ver1.12.4)
+    .portfolio-title-sub-me
+      プログラミングスクールの制作物
+    .work-box-c
+      .work-picture
+        = image_tag "FURIMA/top-page.jpg", id: "main-image-c"
+        .work-picture-sub
+          = image_tag "FURIMA/top-page.jpg",class: "sub-image-c active-c",id: 13
+          = image_tag "FURIMA/product-show.jpg",class: "sub-image-c",id: 23
+          = image_tag "FURIMA/new-user.jpg",class: "sub-image-c",id: 33
+      .work-details
+        %ul.tabnav-c
+          %li
+            %a{:href => "#tab01"} 概要
+          %li
+            %a{:href => "#tab02"} 使用言語
+        .tabcontent-c
+          #tab01
+            %bアプリ名
+            %br
+            FURIMA
+            %br
+            %br
+            %b URL
+            %br
+            = link_to 'http://18.178.226.87/', 'http://18.178.226.87/'
+            %br
+            ID：admin
+            %br
+            Pass：2222
+            %br
+            %br
+            %b制作期間
+            %br
+            4週間(1日あたり約9H)
+            %br
+            %br
+            %b github
+            %br
+            = link_to 'https://github.com/takaki-yuto/furima-app', 'https://github.com/takaki-yuto/furima-app'
+            %br
+            %br
+            %b作成経緯
+            %br
+            プログラミングスクールに通っていた際に、ECサイトをチーム開発で作成したものです。
+            %br
+            私は主に、デプロイ、DB設計、フロントエンド(新規会員登録、商品詳細画面)、サーバーサイド(商品詳細画面)を担当いたしました。
+          #tab02
+            %bフレームワーク
+            %br
+            Ruby on Rails(Ver5.2.4.1)
+            %br
+            %br
+            %b使用言語
+            %br
+            HAML(ver5.1.2)
+            %br
+            SCSS(ver3.7.4)
+            %br
+            jquery(ver1.12.4)
+            %br
+            Ruby(ver2.5.1)
+
+//お問い合わせ
+#contact-content
+  .contact-box
+    .contact-title-box
+      .contact-title-sub
+        CONTACT
+      .contact-title-main
+        お問い合わせ
+    %i.far.fa-envelope.fa-2x.mail
+    f71.takaki.yuuto@gmail.com
+    .license
+    Copyright &copy; 2019 Yuuto Takaki All rights reserved.
