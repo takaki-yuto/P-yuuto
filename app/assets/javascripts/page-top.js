@@ -2,7 +2,7 @@
 var syncerTimeout = null ;
 
 // 一連の処理
-$( function() {
+$(document).on('turbolinks:load',function() {
   // スクロールイベントの設定
   $( window ).scroll( function() {
     // 1秒ごとに処理

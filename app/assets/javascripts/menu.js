@@ -1,4 +1,4 @@
-$(function(){
+$(document).on('turbolinks:load',function(){
   $(".btn-gnavi").on("click", function(){
       // ハンバーガーメニューの位置を設定
       var rightVal = 0;
@@ -26,7 +26,6 @@ $(function(){
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
     if($('a').hasClass("open")) {
-      console.log("入った");
       rightVal = -300;
       $("#global-navi").stop().animate({
         right: rightVal

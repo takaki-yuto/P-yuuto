@@ -8,7 +8,7 @@ $(document).on('turbolinks:load',function(){
   });
 });
 
-jQuery(function($){
+$(document).on('turbolinks:load',function(){
   $('.tabcontent > div').hide();
 
   $('.tabnav-a a').click(function () {
