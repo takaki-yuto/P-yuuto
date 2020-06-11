@@ -72,6 +72,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pry-rails'
 gem 'therubyracer'
+gem 'rails_serve_static_assets'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
