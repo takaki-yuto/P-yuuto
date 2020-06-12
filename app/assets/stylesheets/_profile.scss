@@ -259,11 +259,13 @@
             padding: 10px;
             border-radius: 5px 5px 0 0;
             text-decoration: none;
+            transition: .4s;
         }
         .tabnav-a li a:hover,
         .tabnav-a li a.active{
             background: #ddd;
             color: #333;
+            opacity: 0.85;
         }
         .tabcontent-a{
           padding: 20px;
@@ -332,11 +334,13 @@
             padding: 10px;
             border-radius: 5px 5px 0 0;
             text-decoration: none;
+            transition: .4s;
         }
         .tabnav-b li a:hover,
         .tabnav-b li a.active{
             background: #ddd;
             color: #333;
+            opacity: 0.85;
         }
         .tabcontent-b{
           padding: 20px;
@@ -406,11 +410,13 @@
             padding: 10px;
             border-radius: 5px 5px 0 0;
             text-decoration: none;
+            transition: .4s;
         }
         .tabnav-c li a:hover,
         .tabnav-c li a.active{
             background: #ddd;
             color: #333;
+            opacity: 0.85;
         }
         .tabcontent-c {
           padding: 20px;
