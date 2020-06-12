@@ -100,6 +100,8 @@
         制作実績
     .portfolio-title-sub-me
       個人制作
+
+    //制作物「tsk-magmt」
     .work-box-a
       .work-picture
         = image_tag "tsk-mgmt/login-next.jpg", id: "main-image-a"
@@ -110,12 +112,16 @@
           = image_tag "tsk-mgmt/report-add.jpg",class: "sub-image-a",id: 41
           = image_tag "tsk-mgmt/report-show.jpg",class: "sub-image-a",id: 51
       .work-details
+        //上部メニュー
         %ul.tabnav-a
           %li
             %a{:href => "#tab01"} 概要
           %li
             %a{:href => "#tab02"} 使用言語
+          %li
+            %a{:href => "#tab03"} 工夫した点、苦労した点
         .tabcontent-a
+          //概要
           #tab01
             %bアプリ名
             %br
@@ -143,7 +149,8 @@
             %br
             日報を確認してもらえないことがあり、情報伝達がうまくできなかった経験がありました。
             %br
-            このミスを無くすために、日頃から確認する、予定表と日報の機能を組み合わせることで解決できると思い、 このサイトを作成いたしました。
+            このミスを無くすために、日頃から確認する予定表と日報の機能を組み合わせることで解決できると思い、 このサイトを作成いたしました。
+          //使用言語
           #tab02
             %bフレームワーク
             %br
@@ -159,6 +166,14 @@
             jquery(ver1.12.4)
             %br
             Ruby(ver2.5.1)
+          //工夫した点、苦労した点
+          #tab03
+            %b 工夫した点
+            %br
+            %br
+            %b 苦労した点
+
+    //制作物「ポートフォリオ」
     .work-box-b
       .work-picture
         = image_tag "Ptkyt/top-page.jpg", id: "main-image-b"
@@ -167,12 +182,16 @@
           = image_tag "Ptkyt/exp.jpg",class: "sub-image-b",id: 22
           = image_tag "Ptkyt/portfolio.jpg",class: "sub-image-b",id: 32
       .work-details
+        //上部メニュー
         %ul.tabnav-b
           %li
             %a{:href => "#tab01"} 概要
           %li
             %a{:href => "#tab02"} 使用言語
+          %li
+            %a{:href => "#tab03"} 工夫した点、苦労した点
         .tabcontent-b
+          //概要
           #tab01
             %bポートフォリオサイト
             %br
@@ -187,11 +206,7 @@
             = link_to 'https://github.com/takaki-yuto/P-yuuto', 'https://github.com/takaki-yuto/P-yuuto'
             %br
             %br
-            %b作成経緯
-            %br
-            ポートフォリオサイトを作成した方が、自分を知ってもらいやすいと考え、作成いたしました。
-            %br
-            レスポンシブデザインも意識して作成いたしましたので、ウィンドウズサイズを変えてもビューが崩れません。
+          //使用言語
           #tab02
             %bフレームワーク
             %br
@@ -205,8 +220,31 @@
             SCSS(ver3.7.4)
             %br
             jquery(ver1.12.4)
+          //工夫した点、苦労した点
+          #tab03
+            %b 工夫した点
+            %br
+            常にサイトの閲覧者の気持ちを考えながら、作成に取り組みました。
+            %br
+            閲覧者がどのような情報を欲しいのか？ユーザビリティが考慮されているか？を重点に置き作業いたしました。
+            %br
+            結果として、不要な情報を非表示にさせたり、ハンバーガーメニューを採用することを思いつくことができました。
+            %br
+            %br
+            %b 苦労した点
+            %br
+            レスポンシブデザインを考えることに苦戦いたしました。
+            %br
+            作業途中に気付いたのですが、画面サイズを小さくしてみるとビューが崩れてしまう問題が発生しました。
+            %br
+            気付いたのが完成間近ということもあり、CSSの修正等に多くの工数を使ってしまいました。
+            %br
+            基本的なHTML、CSS等の知識だけではサイトを作成していく中で、通用しないと実感することができました。
+
+    //サブタイトル
     .portfolio-title-sub-me
       プログラミングスクールの制作物
+    //制作物「FURIMA」
     .work-box-c
       .work-picture
         = image_tag "FURIMA/top-page.jpg", id: "main-image-c"
@@ -215,12 +253,16 @@
           = image_tag "FURIMA/product-show.jpg",class: "sub-image-c",id: 23
           = image_tag "FURIMA/new-user.jpg",class: "sub-image-c",id: 33
       .work-details
+        //上部メニュー
         %ul.tabnav-c
           %li
             %a{:href => "#tab01"} 概要
           %li
             %a{:href => "#tab02"} 使用言語
+          %li
+            %a{:href => "#tab03"} 工夫した点、苦労した点
         .tabcontent-c
+          //概要
           #tab01
             %bアプリ名
             %br
@@ -251,6 +293,7 @@
             プログラミングスクールに通っていた際に、ECサイトをチーム開発で作成したものです。
             %br
             私は主に、デプロイ、DB設計、フロントエンド(新規会員登録、商品詳細画面)、サーバーサイド(商品詳細画面)を担当いたしました。
+          //使用言語
           #tab02
             %bフレームワーク
             %br
@@ -266,6 +309,25 @@
             jquery(ver1.12.4)
             %br
             Ruby(ver2.5.1)
+          //工夫した点、苦労した点
+          #tab03
+            %b 工夫した点
+            %br
+            どうすれば効率よく作業ができるのか常に考えながら行動を心がけました。
+            %br
+            具体的には各メンバーに待ちが発生しないように、タスクの割り振りを考えたり、自分のタスクに期間を設けるなどを行いました。
+            %br
+            結果として自分の作業を予定より早めに終わらせることができ、チームメンバーのフォローに入ることができました。
+            %br
+            %br
+            %b 苦労した点
+            %br
+            チーム開発ではrails5.2を使用していたのでsecrets.ymlが使えず、master.keyを使ったデプロイに苦戦しました。
+            %br
+            デプロイについては問題が起きてもチームメンバーに相談ができないため、問題解決をするのにも時間がかかりました。
+            %br
+            今振り返ると、スクールの先輩方やメンターさんに早めに相談したほうが、問題解決も早かった のではないかと感じました。
+
 
 //お問い合わせ
 #contact-content
