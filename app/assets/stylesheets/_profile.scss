@@ -64,11 +64,14 @@
         margin: 40px 100px;
       }
       .my-picture {
-        border-radius: 50%;
-        height: 300px;
-        width: 300px;
-        background-image: image-url("test.jpg");
-        background-position: center center;
+        height: 280px;
+        width: 280px;
+        .test {
+          object-fit: fill;
+          border-radius: 50%;
+          height: 100%;
+          width: 100%;
+        }
       }
       .my-info {
         font-size: 20px;
