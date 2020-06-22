@@ -219,7 +219,7 @@
         }
         #main-image-a {
           border: 1px solid #ccc;
-          object-fit: cover;
+          object-fit: fill;
           height:450px;
           width: 600px;
           @media screen and ( max-width : 1250px ) {
