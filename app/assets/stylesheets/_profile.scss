@@ -274,6 +274,9 @@
           padding: 20px;
           border: 1px dotted #ccc;
           width: 100%;
+          #tab01 {
+            font-size: 14.5px;
+          }
           @media screen and ( max-width : 1250px ) {
             width: 90%;
           }
