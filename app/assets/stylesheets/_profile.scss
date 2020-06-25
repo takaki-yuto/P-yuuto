@@ -186,7 +186,7 @@
 #portfolio-content {
   .portfolio-box {
     padding: 10vh;
-    @media screen and ( max-width : 1250px ) {
+    @media screen and ( max-width : 1510px ) {
       padding: 10vh 0 0 0;
     }
     .portfolio-title-box {
@@ -208,27 +208,27 @@
 
     /* アプリ名「tsk-mgmt」 */
     .work-box-a {
-      margin-top: 40px;
+      margin: 40px 5% 0;
       display: flex;
-      @media screen and ( max-width : 1250px ) {
+      @media screen and ( max-width : 1510px ) {
         display: block;
       }
       .work-picture {
-        @media screen and ( max-width : 1250px ) {
+        @media screen and ( max-width : 1510px ) {
           text-align: center;
         }
         #main-image-a {
           border: 1px solid #ccc;
           object-fit: fill;
           height:450px;
-          width: 600px;
-          @media screen and ( max-width : 1250px ) {
+          width: 710px;
+          @media screen and ( max-width : 1510px ) {
             width: 95%;
           }
         }
         .work-picture-sub {
           display:flex;
-          @media screen and ( max-width : 1250px ) {
+          @media screen and ( max-width : 1510px ) {
             justify-content: center;
           }
           .sub-image-a{
@@ -245,7 +245,7 @@
       }
       .work-details {
         margin-left: 20px;
-        @media screen and ( max-width : 1250px ) {
+        @media screen and ( max-width : 1510px ) {
           margin: 10px 0 0 0;
         }
         .tabnav-a{
@@ -277,7 +277,7 @@
           #tab01 {
             font-size: 14.5px;
           }
-          @media screen and ( max-width : 1250px ) {
+          @media screen and ( max-width : 1510px ) {
             width: 90%;
           }
         }
@@ -286,27 +286,27 @@
 
     /* アプリ名「ポートフォリオ」 */
     .work-box-b {
-      margin: 120px 0;
+      margin: 120px 5% 0;
       display: flex;
-      @media screen and ( max-width : 1250px ) {
+      @media screen and ( max-width : 1510px ) {
         display: block;
       }
       .work-picture {
-        @media screen and ( max-width : 1250px ) {
+        @media screen and ( max-width : 1510px ) {
           text-align: center;
         }
         #main-image-b {
           border: 1px solid #ccc;
           object-fit:cover;
           height:450px;
-          width: 600px;
-          @media screen and ( max-width : 1250px ) {
+          width: 710px;
+          @media screen and ( max-width : 1510px ) {
             width: 95%;
           }
         }
         .work-picture-sub {
           display:flex;
-          @media screen and ( max-width : 1250px ) {
+          @media screen and ( max-width : 1510px ) {
             justify-content: center;
           }
           .sub-image-b{
@@ -323,7 +323,7 @@
       }
       .work-details {
         margin-left: 20px;
-        @media screen and ( max-width : 1250px ) {
+        @media screen and ( max-width : 1510px ) {
           margin: 10px 0 0 0;
         }
         .tabnav-b{
@@ -352,7 +352,7 @@
           padding: 20px;
           border: 1px dotted #ccc;
           width: 100%;
-          @media screen and ( max-width : 1250px ) {
+          @media screen and ( max-width : 1510px ) {
             width: 90%;
           }
         }
@@ -362,28 +362,28 @@
 
     /* アプリ名「FURIMA」 */
     .work-box-c {
-      margin-top: 120px;
+      margin: 120px 5% 0;
       display: flex;
-      @media screen and ( max-width : 1250px ) {
+      @media screen and ( max-width : 1510px ) {
         display: block;
         margin: 120px 0;
       }
       .work-picture {
-        @media screen and ( max-width : 1250px ) {
+        @media screen and ( max-width : 1510px ) {
           text-align: center;
         }
         #main-image-c {
           border: 1px solid #ccc;
           object-fit:cover;
           height:450px;
-          width: 600px;
-          @media screen and ( max-width : 1250px ) {
+          width: 710px;
+          @media screen and ( max-width : 1510px ) {
             width: 95%;
           }
         }
         .work-picture-sub {
           display:flex;
-          @media screen and ( max-width : 1250px ) {
+          @media screen and ( max-width : 1510px ) {
             justify-content: center;
           }
           .sub-image-c {
@@ -400,7 +400,7 @@
       }
       .work-details {
         margin-left: 20px;
-        @media screen and ( max-width : 1250px ) {
+        @media screen and ( max-width : 1510px ) {
           margin: 10px 0 0 0;
         }
         .tabnav-c{
@@ -429,7 +429,7 @@
           padding: 20px;
           border: 1px dotted #ccc;
           width: 100%;
-          @media screen and ( max-width : 1250px ) {
+          @media screen and ( max-width : 1510px ) {
             width: 90%;
           }
         }
