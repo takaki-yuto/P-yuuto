@@ -14,11 +14,11 @@
     }
     .welcome-title {
       color: white;
-      font-size: 60px;
+      font-size: 53px;
       font-weight: bold;
       margin-bottom: 20px;
-      @media screen and ( max-width : 1200px ) {
-        font-size: 28px;
+      @media screen and ( max-width : 1380px ) {
+        font-size: 40px;
       }
     }
     .about-link-btn {
@@ -186,8 +186,8 @@
 #portfolio-content {
   .portfolio-box {
     padding: 10vh;
-    @media screen and ( max-width : 1510px ) {
-      padding: 10vh 0 0 0;
+    @media screen and ( max-width : 900px ) {
+      padding: 10vh 0;
     }
     .portfolio-title-box {
       text-align: center;
@@ -210,12 +210,12 @@
     .work-box-a {
       margin: 40px 5% 0;
       display: flex;
-      @media screen and ( max-width : 1510px ) {
+      @media screen and ( max-width : 1380px ) {
         margin: 40px 0 0 0;
         display: block;
       }
       .work-picture {
-        @media screen and ( max-width : 1510px ) {
+        @media screen and ( max-width : 1380px ) {
           text-align: center;
         }
         #main-image-a {
@@ -223,13 +223,13 @@
           object-fit: fill;
           height:450px;
           width: 710px;
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             width: 95%;
           }
         }
         .work-picture-sub {
           display:flex;
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             justify-content: center;
           }
           .sub-image-a{
@@ -246,7 +246,7 @@
       }
       .work-details {
         margin-left: 20px;
-        @media screen and ( max-width : 1510px ) {
+        @media screen and ( max-width : 1380px ) {
           margin: 10px 0 0 0;
         }
         .tabnav-a{
@@ -281,7 +281,7 @@
           #tab04 {
             font-size: 14px;
           }
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             width: 90%;
           }
         }
@@ -292,12 +292,12 @@
     .work-box-b {
       margin: 120px 5% 0;
       display: flex;
-      @media screen and ( max-width : 1510px ) {
+      @media screen and ( max-width : 1380px ) {
         margin: 120px 0 0 0;
         display: block;
       }
       .work-picture {
-        @media screen and ( max-width : 1510px ) {
+        @media screen and ( max-width : 1380px ) {
           text-align: center;
         }
         #main-image-b {
@@ -305,13 +305,13 @@
           object-fit:cover;
           height:450px;
           width: 710px;
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             width: 95%;
           }
         }
         .work-picture-sub {
           display:flex;
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             justify-content: center;
           }
           .sub-image-b{
@@ -328,7 +328,7 @@
       }
       .work-details {
         margin-left: 20px;
-        @media screen and ( max-width : 1510px ) {
+        @media screen and ( max-width : 1380px ) {
           margin: 10px 0 0 0;
         }
         .tabnav-b{
@@ -357,7 +357,7 @@
           padding: 20px;
           border: 1px dotted #ccc;
           width: 100%;
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             width: 90%;
           }
           #tab03 {
@@ -372,12 +372,12 @@
     .work-box-c {
       margin: 120px 5% 0;
       display: flex;
-      @media screen and ( max-width : 1510px ) {
+      @media screen and ( max-width : 1380px ) {
         display: block;
         margin: 120px 0;
       }
       .work-picture {
-        @media screen and ( max-width : 1510px ) {
+        @media screen and ( max-width : 1380px ) {
           text-align: center;
         }
         #main-image-c {
@@ -385,13 +385,13 @@
           object-fit:cover;
           height:450px;
           width: 710px;
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             width: 95%;
           }
         }
         .work-picture-sub {
           display:flex;
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             justify-content: center;
           }
           .sub-image-c {
@@ -408,7 +408,7 @@
       }
       .work-details {
         margin-left: 20px;
-        @media screen and ( max-width : 1510px ) {
+        @media screen and ( max-width : 1380px ) {
           margin: 10px 0 0 0;
         }
         .tabnav-c{
@@ -437,7 +437,7 @@
           padding: 20px;
           border: 1px dotted #ccc;
           width: 100%;
-          @media screen and ( max-width : 1510px ) {
+          @media screen and ( max-width : 1380px ) {
             width: 90%;
           }
         }
