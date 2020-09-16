@@ -443,6 +443,82 @@
         }
       }
     }
+
+    /* その他実績「PAIZA」 */
+    .work-box-d {
+      margin: 120px 5% 0;
+      display: flex;
+      @media screen and ( max-width : 1380px ) {
+        display: block;
+        margin: 120px 0;
+      }
+      .work-picture {
+        @media screen and ( max-width : 1380px ) {
+          text-align: center;
+        }
+        #main-image-d {
+          border: 1px solid #ccc;
+          object-fit:cover;
+          height:450px;
+          width: 710px;
+          @media screen and ( max-width : 1380px ) {
+            width: 95%;
+          }
+        }
+        .work-picture-sub {
+          display:flex;
+          @media screen and ( max-width : 1380px ) {
+            justify-content: center;
+          }
+          .sub-image-d {
+            border: 1px solid #ccc;
+            object-fit:cover;
+            height:50px;
+            width: 80px;
+            opacity: 0.5;
+          }
+          .active-d {
+            opacity: 1;
+          }
+        }
+      }
+      .work-details {
+        margin-left: 20px;
+        @media screen and ( max-width : 1380px ) {
+          margin: 10px 0 0 0;
+        }
+        .tabnav-d{
+          margin: 0;
+          padding: 0;
+        }
+        .tabnav-d li{
+            display: inline;
+        }
+        .tabnav-d li a{
+            display: inline-block;
+            background: #405dca;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            text-decoration: none;
+            transition: .4s;
+        }
+        .tabnav-d li a:hover,
+        .tabnav-d li a.active{
+            background: #ddd;
+            color: #333;
+            opacity: 0.85;
+        }
+        .tabcontent-d {
+          padding: 20px;
+          border: 1px dotted #ccc;
+          width: 100%;
+          @media screen and ( max-width : 1380px ) {
+            width: 90%;
+          }
+        }
+      }
+    }
   }
 }
 
